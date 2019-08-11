@@ -1,0 +1,121 @@
+2019-08-10 23:25:47.428  INFO 14452 --- [main] ScAdminServerApplication          : No active profile set, falling back to default profiles: default
+2019-08-10 23:25:49.503  WARN 14452 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-08-10 23:25:50.112  INFO 14452 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=984ef7fe-62ab-3487-ae72-c6502f0b0178
+2019-08-10 23:25:50.359  INFO 14452 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7facc2d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 23:25:52.566  INFO 14452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8769 (http)
+2019-08-10 23:25:52.667  INFO 14452 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-10 23:25:52.668  INFO 14452 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-10 23:25:53.119  INFO 14452 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-10 23:25:53.120  INFO 14452 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5613 ms
+2019-08-10 23:25:53.363  WARN 14452 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-08-10 23:25:53.363  INFO 14452 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-08-10 23:25:53.395  INFO 14452 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7978e022
+2019-08-10 23:25:57.063  INFO 14452 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-08-10 23:25:57.877  INFO 14452 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2019-08-10 23:25:58.888  WARN 14452 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-08-10 23:25:58.891  INFO 14452 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-08-10 23:25:59.391  INFO 14452 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-10 23:25:59.820  WARN 14452 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-08-10 23:26:06.223  INFO 14452 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-08-10 23:26:07.258  INFO 14452 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1216eb3f, org.springframework.security.web.context.SecurityContextPersistenceFilter@111a7973, org.springframework.security.web.header.HeaderWriterFilter@20216016, org.springframework.security.web.csrf.CsrfFilter@105db94d, org.springframework.security.web.authentication.logout.LogoutFilter@6befbb12, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@74c121d4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2ad7bd26, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78b0ec3a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@28daf506, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59e7564b, org.springframework.security.web.session.SessionManagementFilter@267891bf, org.springframework.security.web.access.ExceptionTranslationFilter@4ae8fb2a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@250967f1]
+2019-08-10 23:26:07.483  INFO 14452 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-08-10 23:26:07.975  INFO 14452 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-08-10 23:26:08.092  INFO 14452 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-08-10 23:26:10.311  INFO 14452 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-08-10 23:26:10.311  INFO 14452 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-08-10 23:26:10.545  INFO 14452 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-08-10 23:26:10.546  INFO 14452 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-08-10 23:26:10.973  INFO 14452 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-08-10 23:26:12.412  INFO 14452 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-08-10 23:26:12.412  INFO 14452 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-08-10 23:26:12.412  INFO 14452 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-08-10 23:26:12.413  INFO 14452 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-08-10 23:26:12.413  INFO 14452 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-08-10 23:26:12.413  INFO 14452 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-08-10 23:26:12.413  INFO 14452 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-08-10 23:26:12.983  INFO 14452 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-08-10 23:26:12.997  INFO 14452 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-08-10 23:26:13.004  INFO 14452 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-08-10 23:26:13.013  INFO 14452 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1565450773010 with initial instances count: 0
+2019-08-10 23:26:13.016  INFO 14452 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SC-ADMIN-SERVER with eureka with status UP
+2019-08-10 23:26:13.018  INFO 14452 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1565450773017, current=UP, previous=STARTING]
+2019-08-10 23:26:13.324  INFO 14452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SC-ADMIN-SERVER/localhost:sc-admin-server:8769: registering service...
+2019-08-10 23:26:13.852  INFO 14452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8769 (http) with context path ''
+2019-08-10 23:26:13.857  INFO 14452 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8769
+2019-08-10 23:26:13.863  INFO 14452 --- [main] ScAdminServerApplication          : Started ScAdminServerApplication in 35.735 seconds (JVM running for 37.589)
+2019-08-10 23:26:14.112  INFO 14452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SC-ADMIN-SERVER/localhost:sc-admin-server:8769 - registration status: 204
+2019-08-10 23:26:17.997  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-08-10 23:26:17.998  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-08-10 23:26:17.998  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-08-10 23:26:17.999  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-08-10 23:26:17.999  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-08-10 23:26:17.999  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2019-08-10 23:26:17.999  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-08-10 23:26:18.010  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-08-10 23:26:23.015  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-08-10 23:26:23.018  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-08-10 23:26:23.018  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-08-10 23:26:23.020  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-08-10 23:26:23.023  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-08-10 23:26:23.023  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2019-08-10 23:26:23.023  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-08-10 23:26:23.066  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-08-10 23:26:28.069  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-08-10 23:26:28.069  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-08-10 23:26:28.069  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-08-10 23:26:28.070  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-08-10 23:26:28.070  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-08-10 23:26:28.070  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2019-08-10 23:26:28.070  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-08-10 23:26:28.076  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-08-10 23:26:33.079  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-08-10 23:26:33.079  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-08-10 23:26:33.080  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-08-10 23:26:33.083  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-08-10 23:26:33.085  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-08-10 23:26:33.085  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2019-08-10 23:26:33.086  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-08-10 23:26:33.188  INFO 14452 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-08-10 23:26:36.650  INFO 14452 --- [http-nio-8769-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-10 23:26:36.650  INFO 14452 --- [http-nio-8769-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-10 23:26:36.668  INFO 14452 --- [http-nio-8769-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-08-10 23:31:12.418  INFO 14452 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-08-10 23:36:12.420  INFO 14452 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-08-10 23:36:12.712 ERROR 14452 --- [http-nio-8769-exec-9] o.a.catalina.connector.CoyoteAdapter     : Exception while processing an asynchronous request
+
+java.lang.IllegalStateException: Calling [asyncError()] is not valid for a request with Async state [MUST_DISPATCH]
+	at org.apache.coyote.AsyncStateMachine.asyncError(AsyncStateMachine.java:440) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:512) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.Request.action(Request.java:430) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.AsyncContextImpl.setErrorState(AsyncContextImpl.java:401) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.connector.CoyoteAdapter.asyncDispatch(CoyoteAdapter.java:239) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProcessor.dispatch(AbstractProcessor.java:241) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:53) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2019-08-10 23:37:13.441  INFO 14452 --- [http-nio-8769-exec-11] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia-actuator-endpoint: No access restrictor found, access to any MBean is allowed
+2019-08-10 23:39:05.401 ERROR 14452 --- [http-nio-8769-exec-4] o.a.catalina.connector.CoyoteAdapter     : Exception while processing an asynchronous request
+
+java.lang.IllegalStateException: Calling [asyncError()] is not valid for a request with Async state [MUST_DISPATCH]
+	at org.apache.coyote.AsyncStateMachine.asyncError(AsyncStateMachine.java:440) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:512) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.Request.action(Request.java:430) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.AsyncContextImpl.setErrorState(AsyncContextImpl.java:401) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.connector.CoyoteAdapter.asyncDispatch(CoyoteAdapter.java:239) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProcessor.dispatch(AbstractProcessor.java:241) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:53) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2019-08-10 23:41:12.422  INFO 14452 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
