@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.didispace</groupId>
+	<artifactId>Chapter-Muti-Profiles</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
+
+	<name>Chapter-Muti-Profiles</name>
+	<description></description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.7.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<!-- delimiter that doesn't clash with Spring ${} placeholders -->
+		<!--
+		<resource.delimiter>#</resource.delimiter>
+		-->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>true</scope>
+			<optional>true</optional>
+		</dependency>
+	</dependencies>
+	<profiles>
+		<profile>
+			<id>dev</id><!-- 开发环境 -->
+			<properties>
+				<active.target.profile>dev</active.target.profile>
+			</properties>
+		</profile>
+		<profile>
+			<id>test</id><!-- 测试环境 -->
+			<properties>
+				<active.target.profile>test</active.target.profile>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod_test</id><!-- 生测环境 -->
+			<properties>
+				<active.target.profile>prod_test</active.target.profile>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod</id><!-- 生产环境 -->
+			<properties>
+				<active.target.profile>prod</active.target.profile>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+	</profiles>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<fork>true</fork> <!-- 如果没有该配置，devtools不会生效 -->
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<!--1 先排除所有的profile文件 -->
+				<excludes>
+					<exclude>application*.properties</exclude>
+					<!--
+                	<exclude>application*.yml</exclude>
+					-->
+            </excludes>
+        </resource>
+        <resource>
+            <directory>src/main/resources</directory>
+            <!--2 按需复制所有需的profile文件-->
+				<filtering>true</filtering>
+				<includes>
+					<include>application.properties</include>
+					<include>application-${active.target.profile}.properties</include>
+					<!--
+					<include>application.yml</include>
+					<include>application-${active.target.profile}.yml</include>
+					-->
+				</includes>
+			</resource>
+		</resources>
+	</build>
+</project>

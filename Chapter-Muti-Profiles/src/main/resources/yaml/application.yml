@@ -1,0 +1,14 @@
+com:
+    whdcmap:
+        study:
+            bignumber: ${random.long}
+            desc: ${com.whdcmap.study.name}正在努力写《${com.whdcmap.study.title}》
+            name: 蜀山剑侠
+            number: ${random.int}
+            test1: ${random.int(10)}
+            test2: ${random.int[10,20]}
+            title: Spring Boot教程
+            value: ${random.value}
+spring:
+   profiles:
+     active: @active.target.profile@
